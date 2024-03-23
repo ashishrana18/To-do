@@ -47,6 +47,7 @@ body.addEventListener("keydown",function(event){
 // to assign functioning of button to enable or diasble task "using event delegation"
 ul.addEventListener("click",function(event){
     if(event.target.nodeName=="SPAN"){
+        // event.target.nodeName=event.target.tagName  => both are same 
         console.dir(event.target);
         let span=event.target;
         span.nextElementSibling.classList.toggle("done");
